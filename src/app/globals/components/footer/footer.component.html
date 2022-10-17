@@ -1,0 +1,22 @@
+<div class="container">
+    <h3 class="px-2 py-2">Contáctanos en nuestras redes</h3>
+    <ul>
+        <li *ngFor="let social of listSocials" class="py-1 px-2">
+            <i class="{{social.class}}"></i>
+            <a href="{{social.link}}" target="_blank">
+                <span class="px-1">{{social.value}}</span>
+            </a>
+        </li>
+    </ul>
+    <h3 class="px-2 py-2">Encuéntranos en:</h3>
+    <div class="map">
+        <iframe 
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d995.3301672254473!2d-73.25172169777817!3d-3.740138098389627!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x91ea1a9fd46d9399%3A0xdcd876098784aca9!2sParque%20Zonal!5e0!3m2!1ses-419!2spe!4v1665969985702!5m2!1ses-419!2spe" 
+            style="border:0;" 
+            allowfullscreen=""
+            loading="lazy" 
+            referrerpolicy="no-referrer-when-downgrade">
+        </iframe>    
+    </div>
+    <p class="text-center py-1 copyright">© Corvax Solutions. Todos los derechos reservados.</p>
+</div>

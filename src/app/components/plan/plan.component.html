@@ -1,0 +1,18 @@
+<div class="container">
+    <p class="text-center">Conoce nuestros planes mensuales diseñados a tu medida</p>
+    <div class="row">
+        <div class="col-xs-12 col-sm-8 col-md-6 col-lg-4 py-1 p-relative containt-box" *ngFor="let plan of listPlans">
+            <div class="box card text-center">
+                <div class="card-recommend" *ngIf="plan.recommend"></div>
+                <h2 class="plan-title">{{plan.title}}</h2>
+                <div class="divider-md"></div>
+                <app-price [price]="plan.price"></app-price>
+                <ul class="plan-features">
+                    <li *ngFor="let feature of plan.features">
+                        {{feature}}
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>

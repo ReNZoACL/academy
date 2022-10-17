@@ -1,0 +1,16 @@
+<div class="container p-relative py-2">
+    <div class="px-2">
+        <h2 class="text-center">Tenemos estos horarios para ti</h2>
+        <ul class="py-1">
+            <li class="py-1" *ngFor="let schedule of listSchedule">
+                <span class="text-bold">{{schedule.day}}:</span>
+                <div class="px-2">
+                    <p *ngFor="let hour of schedule.hours"> {{hour.hourIni}} a {{hour.hourEnd}}</p>
+                    <span class="">{{schedule.ubication}}</span>
+                </div>
+
+            </li>
+        </ul>
+    </div>
+</div>
+

@@ -1,0 +1,28 @@
+.containt-box {
+    .card {
+        overflow: hidden;
+        height: 300px;
+        position: relative;
+        .plan-features {
+            padding: 0.9rem 0;
+            li {
+                padding: 0.3rem;
+                font-weight: bold;
+            }
+        }
+    }
+    .card-recommend{
+        &::before {
+            content: "Recomendado";
+            position: absolute;
+            background-color: #949B3E;
+            transform: rotate(45deg);
+            width: 200px;
+            height: 30px;
+            font-size: 1.2rem;
+            font-weight: bold;
+            top: 34px;
+            right: -54px;
+        }
+    }
+}
